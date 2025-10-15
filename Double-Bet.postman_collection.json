@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "9eeeaf8c-aba8-4943-a03b-022eba9c3b10",
+		"name": "Double-Bet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "529027"
+	},
+	"item": [
+		{
+			"name": "Add new game",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Name23\",\n    \"description\" : \"Some bet\",\n    \"closingTime\": \"1760603011\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3006/api/games/add",
+					"host": [
+						"localhost"
+					],
+					"port": "3006",
+					"path": [
+						"api",
+						"games",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get list of games",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3006/api/games/list",
+					"host": [
+						"localhost"
+					],
+					"port": "3006",
+					"path": [
+						"api",
+						"games",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Close game",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"gameId\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3006/api/games/close",
+					"host": [
+						"localhost"
+					],
+					"port": "3006",
+					"path": [
+						"api",
+						"games",
+						"close"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get list of bets",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Add new bet",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get contract balance",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Add funds to contract",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
